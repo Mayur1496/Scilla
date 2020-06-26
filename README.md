@@ -7,11 +7,13 @@
  - File messageContractAnalysis.json contains the CashFlow Analysis, warnings, gas consumption
  
  # Installing SCILLA
- The source code of SCILLA and its installation instructions can be found [here](https://github.com/Zilliqa/scilla)
+ The source code of SCILLA and its installation instructions were found [here](https://github.com/Zilliqa/scilla)
  
  # Running Analysis
  After installing SCILLA
+ 
  run the following to get the analysis report in json format
+ 
  `scilla-checker -gaslimit 1000 -libdir ../scilla-v0.7.0/src/stdlib/ -cf  MessageContract.scilla | cat > messageContractAnalysis.json `
  
  - Analysis shows the cash-flow tags i.e. which variables are assosiated with money
