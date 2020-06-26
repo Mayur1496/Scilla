@@ -1,0 +1,105 @@
+scilla_version 0
+
+import ListUtils
+
+(* library declaration *)
+library MessageBoard
+  
+let member_add_success = Int32 1
+let member_add_failed = Int32 2
+let member_already_exists = Int32 3
+let not_member = Int32 4
+let message_add_success = Int32 5
+let message_add_failed = Int32 6
+let one_msg =
+  fun (msg: Message) =>
+  let nil_msg = Nil {Message} in
+  Cons {Message} msg nil_msg
+
+contract MessageBoard
+(* Immutable field to store admin address *)
+(owner: ByStr20)
+
+(* mutable fields *)
+(* Contains a map of Address -> name*)
+field members: Map ByStr20 String = Emp ByStr20 String
+(* Contains a map of name -> message *)
+field board: Map String String = Emp String String
+
+(*Transition for adding members
+  Only admin is allowed to add members *)
+transition addMember(address: ByStr20, name: String )
+  (* Check if the transition invoker is admin or not *)
+  is_owner = builtin eq _sender owner;
+  match is_owner with
+    |True =>
+      mem <- members;
+      (* Check if member is already registered or not *)
+      already_exists = builtin contains mem address;
+      match already_exists with
+        |False =>
+          members[address] := name;
+          msg = {_tag: ""; 
+                _recipient: _sender; 
+                _amount: Uint128 0; 
+                code: member_add_success};
+          msgs = one_msg msg;
+          send msgs
+        |True =>
+          e = {_eventname : "AlreadyExists"; code : member_already_exists};
+          event e
+      end
+    |False =>
+      e = {_eventname : "NotOwner"; code : member_add_failed};
+      event e
+  end
+end
+(* Transition for sending message
+   Only members are allowed to send messages *)
+transition sendMessage (message : String, address: ByStr20)
+  mem <- members;
+  (* Check if the invoker is a member ot not *)
+  is_member = builtin contains mem _sender;
+  match is_member with
+  | True =>
+    (* Send message with sender's address and message
+       Cost of sending message is 10 Units *)
+    msg = {_tag: "recieveMessage"; 
+          _recipient: address; 
+          _amount: Uint128 10; 
+          message: message;
+          sender: _sender};
+    msgs = one_msg msg;
+    send msgs
+  | False =>
+    e = {_eventname : "NotMember"; code : not_member};
+    event e
+  end
+end
+
+(* Transition to recieve messages
+   Invokes automatically when a message is recieved *)
+transition recieveMessage (message: String, sender: ByStr20)
+  mem <- members;
+  (* Check if sender is a member or not *)
+  is_member = builtin contains mem sender;
+  match is_member with
+  | True =>
+    name <- members[sender];
+    match name with
+      |Some n =>
+        (* Update board with new message *)
+        board[n] := message;
+        (* Accept 10 Units amount paid by the sender *)
+        accept;
+        e = {_eventname : "MessageAdded"; code : message_add_success};
+        event e
+      |None =>
+        e = {_eventname : "MessageAddingFailed"; code : message_add_failed};
+        event e
+      end
+  | False =>
+    e = {_eventname : "NotMember"; code : not_member};
+    event e
+  end
+end
