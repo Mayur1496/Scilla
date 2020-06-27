@@ -14,7 +14,7 @@
  
  run the following to get the analysis report in json format
  
- `scilla-checker -gaslimit 1000 -libdir ../scilla-v0.7.0/src/stdlib/ -cf  MessageContract.scilla | cat > messageContractAnalysis.json `
+ `scilla-checker -gaslimit 1000 -libdir <location_to_stdlib> -cf -contractinfo -typeinfo  MessageContract.scilla | cat > messageContractAnalysis.json `
  
  - Analysis shows the cash-flow tags i.e. which variables are assosiated with money
  - Also the gas consumption to be 650 QA (smaller unit of ZIL which is Ziliqa's crypto currency)
