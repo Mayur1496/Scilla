@@ -7,12 +7,1312 @@
     ],
     "ADT constructors": []
   },
+  "type_info": [
+    {
+      "vname": "member_add_success",
+      "type": "Int32",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 8,
+        "column": 5
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 8,
+        "column": 23
+      }
+    },
+    {
+      "vname": "member_add_failed",
+      "type": "Int32",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 9,
+        "column": 5
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 9,
+        "column": 22
+      }
+    },
+    {
+      "vname": "member_already_exists",
+      "type": "Int32",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 10,
+        "column": 5
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 10,
+        "column": 26
+      }
+    },
+    {
+      "vname": "not_member",
+      "type": "Int32",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 11,
+        "column": 5
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 11,
+        "column": 15
+      }
+    },
+    {
+      "vname": "message_add_success",
+      "type": "Int32",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 12,
+        "column": 5
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 12,
+        "column": 24
+      }
+    },
+    {
+      "vname": "message_add_failed",
+      "type": "Int32",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 13,
+        "column": 5
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 13,
+        "column": 23
+      }
+    },
+    {
+      "vname": "one_msg",
+      "type": "Message -> List (Message)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 14,
+        "column": 5
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 14,
+        "column": 12
+      }
+    },
+    {
+      "vname": "msg",
+      "type": "Message",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 15,
+        "column": 8
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 15,
+        "column": 11
+      }
+    },
+    {
+      "vname": "nil_msg",
+      "type": "List (Message)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 16,
+        "column": 7
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 16,
+        "column": 14
+      }
+    },
+    {
+      "vname": "msg",
+      "type": "Message",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 17,
+        "column": 18
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 17,
+        "column": 21
+      }
+    },
+    {
+      "vname": "nil_msg",
+      "type": "List (Message)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 17,
+        "column": 22
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 17,
+        "column": 29
+      }
+    },
+    {
+      "vname": "owner",
+      "type": "ByStr20",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 21,
+        "column": 2
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 21,
+        "column": 7
+      }
+    },
+    {
+      "vname": "members",
+      "type": "Map (ByStr20) (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 25,
+        "column": 7
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 25,
+        "column": 14
+      }
+    },
+    {
+      "vname": "board",
+      "type": "Map (String) (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 27,
+        "column": 7
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 27,
+        "column": 12
+      }
+    },
+    {
+      "vname": "address",
+      "type": "ByStr20",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 31,
+        "column": 22
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 31,
+        "column": 29
+      }
+    },
+    {
+      "vname": "name",
+      "type": "String",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 31,
+        "column": 40
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 31,
+        "column": 44
+      }
+    },
+    {
+      "vname": "is_owner",
+      "type": "Bool",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 33,
+        "column": 3
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 33,
+        "column": 11
+      }
+    },
+    {
+      "vname": "_sender",
+      "type": "ByStr20",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 33,
+        "column": 25
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 33,
+        "column": 32
+      }
+    },
+    {
+      "vname": "owner",
+      "type": "ByStr20",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 33,
+        "column": 33
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 33,
+        "column": 38
+      }
+    },
+    {
+      "vname": "is_owner",
+      "type": "Bool",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 34,
+        "column": 9
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 34,
+        "column": 17
+      }
+    },
+    {
+      "vname": "mem",
+      "type": "Map (ByStr20) (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 36,
+        "column": 7
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 36,
+        "column": 10
+      }
+    },
+    {
+      "vname": "members",
+      "type": "Map (ByStr20) (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 36,
+        "column": 14
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 36,
+        "column": 21
+      }
+    },
+    {
+      "vname": "already_exists",
+      "type": "Bool",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 38,
+        "column": 7
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 38,
+        "column": 21
+      }
+    },
+    {
+      "vname": "mem",
+      "type": "Map (ByStr20) (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 38,
+        "column": 41
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 38,
+        "column": 44
+      }
+    },
+    {
+      "vname": "address",
+      "type": "ByStr20",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 38,
+        "column": 45
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 38,
+        "column": 52
+      }
+    },
+    {
+      "vname": "already_exists",
+      "type": "Bool",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 39,
+        "column": 13
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 39,
+        "column": 27
+      }
+    },
+    {
+      "vname": "members",
+      "type": "Map (ByStr20) (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 41,
+        "column": 11
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 41,
+        "column": 18
+      }
+    },
+    {
+      "vname": "address",
+      "type": "ByStr20",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 41,
+        "column": 19
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 41,
+        "column": 26
+      }
+    },
+    {
+      "vname": "name",
+      "type": "String",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 41,
+        "column": 31
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 41,
+        "column": 35
+      }
+    },
+    {
+      "vname": "msg",
+      "type": "Message",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 42,
+        "column": 11
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 42,
+        "column": 14
+      }
+    },
+    {
+      "vname": "_sender",
+      "type": "ByStr20",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 43,
+        "column": 29
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 43,
+        "column": 36
+      }
+    },
+    {
+      "vname": "member_add_success",
+      "type": "Int32",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 45,
+        "column": 23
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 45,
+        "column": 41
+      }
+    },
+    {
+      "vname": "msgs",
+      "type": "List (Message)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 46,
+        "column": 11
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 46,
+        "column": 15
+      }
+    },
+    {
+      "vname": "one_msg",
+      "type": "Message -> List (Message)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 46,
+        "column": 18
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 46,
+        "column": 25
+      }
+    },
+    {
+      "vname": "msg",
+      "type": "Message",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 46,
+        "column": 26
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 46,
+        "column": 29
+      }
+    },
+    {
+      "vname": "msgs",
+      "type": "List (Message)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 47,
+        "column": 16
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 47,
+        "column": 20
+      }
+    },
+    {
+      "vname": "e",
+      "type": "Event",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 49,
+        "column": 11
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 49,
+        "column": 12
+      }
+    },
+    {
+      "vname": "member_already_exists",
+      "type": "Int32",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 49,
+        "column": 53
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 49,
+        "column": 74
+      }
+    },
+    {
+      "vname": "e",
+      "type": "Event",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 50,
+        "column": 17
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 50,
+        "column": 18
+      }
+    },
+    {
+      "vname": "e",
+      "type": "Event",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 53,
+        "column": 7
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 53,
+        "column": 8
+      }
+    },
+    {
+      "vname": "member_add_failed",
+      "type": "Int32",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 53,
+        "column": 44
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 53,
+        "column": 61
+      }
+    },
+    {
+      "vname": "e",
+      "type": "Event",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 54,
+        "column": 13
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 54,
+        "column": 14
+      }
+    },
+    {
+      "vname": "message",
+      "type": "String",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 59,
+        "column": 25
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 59,
+        "column": 32
+      }
+    },
+    {
+      "vname": "address",
+      "type": "ByStr20",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 59,
+        "column": 43
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 59,
+        "column": 50
+      }
+    },
+    {
+      "vname": "mem",
+      "type": "Map (ByStr20) (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 60,
+        "column": 3
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 60,
+        "column": 6
+      }
+    },
+    {
+      "vname": "members",
+      "type": "Map (ByStr20) (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 60,
+        "column": 10
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 60,
+        "column": 17
+      }
+    },
+    {
+      "vname": "is_member",
+      "type": "Bool",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 62,
+        "column": 3
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 62,
+        "column": 12
+      }
+    },
+    {
+      "vname": "mem",
+      "type": "Map (ByStr20) (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 62,
+        "column": 32
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 62,
+        "column": 35
+      }
+    },
+    {
+      "vname": "_sender",
+      "type": "ByStr20",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 62,
+        "column": 36
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 62,
+        "column": 43
+      }
+    },
+    {
+      "vname": "is_member",
+      "type": "Bool",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 63,
+        "column": 9
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 63,
+        "column": 18
+      }
+    },
+    {
+      "vname": "msg",
+      "type": "Message",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 67,
+        "column": 5
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 67,
+        "column": 8
+      }
+    },
+    {
+      "vname": "address",
+      "type": "ByStr20",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 68,
+        "column": 23
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 68,
+        "column": 30
+      }
+    },
+    {
+      "vname": "message",
+      "type": "String",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 70,
+        "column": 20
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 70,
+        "column": 27
+      }
+    },
+    {
+      "vname": "_sender",
+      "type": "ByStr20",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 71,
+        "column": 19
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 71,
+        "column": 26
+      }
+    },
+    {
+      "vname": "msgs",
+      "type": "List (Message)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 72,
+        "column": 5
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 72,
+        "column": 9
+      }
+    },
+    {
+      "vname": "one_msg",
+      "type": "Message -> List (Message)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 72,
+        "column": 12
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 72,
+        "column": 19
+      }
+    },
+    {
+      "vname": "msg",
+      "type": "Message",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 72,
+        "column": 20
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 72,
+        "column": 23
+      }
+    },
+    {
+      "vname": "msgs",
+      "type": "List (Message)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 73,
+        "column": 10
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 73,
+        "column": 14
+      }
+    },
+    {
+      "vname": "e",
+      "type": "Event",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 75,
+        "column": 5
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 75,
+        "column": 6
+      }
+    },
+    {
+      "vname": "not_member",
+      "type": "Int32",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 75,
+        "column": 43
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 75,
+        "column": 53
+      }
+    },
+    {
+      "vname": "e",
+      "type": "Event",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 76,
+        "column": 11
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 76,
+        "column": 12
+      }
+    },
+    {
+      "vname": "message",
+      "type": "String",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 82,
+        "column": 28
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 82,
+        "column": 35
+      }
+    },
+    {
+      "vname": "sender",
+      "type": "ByStr20",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 82,
+        "column": 45
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 82,
+        "column": 51
+      }
+    },
+    {
+      "vname": "mem",
+      "type": "Map (ByStr20) (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 83,
+        "column": 3
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 83,
+        "column": 6
+      }
+    },
+    {
+      "vname": "members",
+      "type": "Map (ByStr20) (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 83,
+        "column": 10
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 83,
+        "column": 17
+      }
+    },
+    {
+      "vname": "is_member",
+      "type": "Bool",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 85,
+        "column": 3
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 85,
+        "column": 12
+      }
+    },
+    {
+      "vname": "mem",
+      "type": "Map (ByStr20) (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 85,
+        "column": 32
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 85,
+        "column": 35
+      }
+    },
+    {
+      "vname": "sender",
+      "type": "ByStr20",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 85,
+        "column": 36
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 85,
+        "column": 42
+      }
+    },
+    {
+      "vname": "is_member",
+      "type": "Bool",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 86,
+        "column": 9
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 86,
+        "column": 18
+      }
+    },
+    {
+      "vname": "name",
+      "type": "Option (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 88,
+        "column": 5
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 88,
+        "column": 9
+      }
+    },
+    {
+      "vname": "members",
+      "type": "Map (ByStr20) (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 88,
+        "column": 13
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 88,
+        "column": 20
+      }
+    },
+    {
+      "vname": "sender",
+      "type": "ByStr20",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 88,
+        "column": 21
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 88,
+        "column": 27
+      }
+    },
+    {
+      "vname": "name",
+      "type": "Option (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 89,
+        "column": 11
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 89,
+        "column": 15
+      }
+    },
+    {
+      "vname": "n",
+      "type": "String",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 90,
+        "column": 13
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 90,
+        "column": 14
+      }
+    },
+    {
+      "vname": "board",
+      "type": "Map (String) (String)",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 92,
+        "column": 9
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 92,
+        "column": 14
+      }
+    },
+    {
+      "vname": "n",
+      "type": "String",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 92,
+        "column": 15
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 92,
+        "column": 16
+      }
+    },
+    {
+      "vname": "message",
+      "type": "String",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 92,
+        "column": 21
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 92,
+        "column": 28
+      }
+    },
+    {
+      "vname": "e",
+      "type": "Event",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 95,
+        "column": 9
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 95,
+        "column": 10
+      }
+    },
+    {
+      "vname": "message_add_success",
+      "type": "Int32",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 95,
+        "column": 50
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 95,
+        "column": 69
+      }
+    },
+    {
+      "vname": "e",
+      "type": "Event",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 96,
+        "column": 15
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 96,
+        "column": 16
+      }
+    },
+    {
+      "vname": "e",
+      "type": "Event",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 98,
+        "column": 9
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 98,
+        "column": 10
+      }
+    },
+    {
+      "vname": "message_add_failed",
+      "type": "Int32",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 98,
+        "column": 57
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 98,
+        "column": 75
+      }
+    },
+    {
+      "vname": "e",
+      "type": "Event",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 99,
+        "column": 15
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 99,
+        "column": 16
+      }
+    },
+    {
+      "vname": "e",
+      "type": "Event",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 102,
+        "column": 5
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 102,
+        "column": 6
+      }
+    },
+    {
+      "vname": "not_member",
+      "type": "Int32",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 102,
+        "column": 43
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 102,
+        "column": 53
+      }
+    },
+    {
+      "vname": "e",
+      "type": "Event",
+      "start_location": {
+        "file": "MessageContract.scilla",
+        "line": 103,
+        "column": 11
+      },
+      "end_location": {
+        "file": "MessageContract.scilla",
+        "line": 103,
+        "column": 12
+      }
+    }
+  ],
+  "contract_info": {
+    "scilla_major_version": "0",
+    "vname": "MessageBoard",
+    "params": [ { "vname": "owner", "type": "ByStr20" } ],
+    "fields": [
+      { "vname": "members", "type": "Map (ByStr20) (String)", "depth": 1 },
+      { "vname": "board", "type": "Map (String) (String)", "depth": 1 }
+    ],
+    "transitions": [
+      {
+        "vname": "addMember",
+        "params": [
+          { "vname": "address", "type": "ByStr20" },
+          { "vname": "name", "type": "String" }
+        ]
+      },
+      {
+        "vname": "sendMessage",
+        "params": [
+          { "vname": "message", "type": "String" },
+          { "vname": "address", "type": "ByStr20" }
+        ]
+      },
+      {
+        "vname": "recieveMessage",
+        "params": [
+          { "vname": "message", "type": "String" },
+          { "vname": "sender", "type": "ByStr20" }
+        ]
+      }
+    ],
+    "procedures": [],
+    "events": [
+      {
+        "vname": "MessageAddingFailed",
+        "params": [ { "vname": "code", "type": "Int32" } ]
+      },
+      {
+        "vname": "MessageAdded",
+        "params": [ { "vname": "code", "type": "Int32" } ]
+      },
+      {
+        "vname": "NotMember",
+        "params": [ { "vname": "code", "type": "Int32" } ]
+      },
+      {
+        "vname": "NotOwner",
+        "params": [ { "vname": "code", "type": "Int32" } ]
+      },
+      {
+        "vname": "AlreadyExists",
+        "params": [ { "vname": "code", "type": "Int32" } ]
+      }
+    ],
+    "ADTs": [
+      {
+        "tname": "Option",
+        "tparams": [ "'A" ],
+        "tmap": [
+          { "cname": "Some", "argtypes": [ "'A" ] },
+          { "cname": "None", "argtypes": [] }
+        ]
+      },
+      {
+        "tname": "Bool",
+        "tparams": [],
+        "tmap": [
+          { "cname": "True", "argtypes": [] },
+          { "cname": "False", "argtypes": [] }
+        ]
+      },
+      {
+        "tname": "Nat",
+        "tparams": [],
+        "tmap": [
+          { "cname": "Zero", "argtypes": [] },
+          { "cname": "Succ", "argtypes": [ "Nat" ] }
+        ]
+      },
+      {
+        "tname": "List",
+        "tparams": [ "'A" ],
+        "tmap": [
+          { "cname": "Cons", "argtypes": [ "'A", "List ('A)" ] },
+          { "cname": "Nil", "argtypes": [] }
+        ]
+      },
+      {
+        "tname": "Pair",
+        "tparams": [ "'A", "'B" ],
+        "tmap": [ { "cname": "Pair", "argtypes": [ "'A", "'B" ] } ]
+      }
+    ]
+  },
   "warnings": [
     {
       "warning_message": "Consider using in-place Map access",
       "start_location": {
         "file": "MessageContract.scilla",
-        "line": 68,
+        "line": 83,
         "column": 10
       },
       "end_location": { "file": "", "line": 0, "column": 0 },
@@ -22,7 +1322,7 @@
       "warning_message": "Consider using in-place Map access",
       "start_location": {
         "file": "MessageContract.scilla",
-        "line": 50,
+        "line": 60,
         "column": 10
       },
       "end_location": { "file": "", "line": 0, "column": 0 },
@@ -32,7 +1332,7 @@
       "warning_message": "Consider using in-place Map access",
       "start_location": {
         "file": "MessageContract.scilla",
-        "line": 28,
+        "line": 36,
         "column": 14
       },
       "end_location": { "file": "", "line": 0, "column": 0 },
